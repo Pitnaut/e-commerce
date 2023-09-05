@@ -1,22 +1,26 @@
-const express = require('express')
-const db = require('./db/queries')
-const bodyParser = require('body-parser')
-const app = express()
-const PORT = process.env.PORT ?? 3000
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const routes = require('./routes/routes');
+const PORT = process.env.PORT || 3000;
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
     extended: true,
   })
-)
+);
 
 app.get('/', (req, res) => {
-  res.status(200).send('Welcome to backend hell!')
-})
+  res.status(200).send('Welcome to SuperMusicShop');
+});
 
-app.get('/products', db.getAllProducts)
+app.use('/', routes);
+
+
 
 app.listen(PORT, () => {
-  console.log(`listening on port http://localhost:${PORT}`)
-})
+  console.log(`listening on port http://localhost:${PORT}`);
+});
+
+
