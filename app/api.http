@@ -1,0 +1,5 @@
+### Main test
+GET http://localhost:3000
+
+### Get all Products
+GET http://localhost:3000/products
