@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 
 app.use('/', routes);
 
-app.post('/register', db.registerUser)
+
 
 app.listen(PORT, () => {
   console.log(`listening on port http://localhost:${PORT}`);

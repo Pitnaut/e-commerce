@@ -12,8 +12,8 @@ POST http://localhost:3000/register
 Content-Type: application/json
 
 {
-  "email": "otra_prueba_mas@prueba.com",
-  "password": "secreto",
-  "firstname": "Juanita",
-  "lastname": "López"
+  "email": "mariajimenez@prueba.com",
+  "password": "dentista",
+  "firstname": "María",
+  "lastname": "Jimenez"
 }
