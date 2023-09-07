@@ -6,3 +6,14 @@ GET http://localhost:3000/products
 
 ### Get prodcut by Id
 GET http://localhost:3000/products/3
+
+### Register new user
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "email": "otra_prueba_mas@prueba.com",
+  "password": "secreto",
+  "firstname": "Juanita",
+  "lastname": "López"
+}

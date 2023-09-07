@@ -37,8 +37,22 @@ const getProductById = (req, res) => {
   })
 };
 
+//registerUser
+const registerUser = (req, res) => {
+  const { email, password, firstname, lastname } = req.body;
+
+  pool.query('INSERT INTO users (email, password, first_name, last_name) VALUES ($1, $2, $3, $4) RETURNING id', [email, password, firstname, lastname], (error, results) => {
+    if (error) {
+      throw error;
+    }
+    res.status(201).send(`User added with ID: ${results.rows[0].id}`);
+  });
+};
+
+
 module.exports = {
   getAllProducts,
   getProductById,
+  registerUser
 }
 
