@@ -17,3 +17,12 @@ Content-Type: application/json
   "firstname": "Laura",
   "lastname": "Guasch"
 }
+
+### Login new user
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "laura_la_guapa@laguapa.com",
+  "password": "piter"
+}
