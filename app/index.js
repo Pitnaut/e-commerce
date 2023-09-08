@@ -4,7 +4,7 @@ const routes = require('./routes/routes');
 const PORT = process.env.PORT || 3000;
 const { jsonParser, urlEncodedParser } = require('./middlewares/bodyparser');
 // const session = require('express-session');
-const db = require('./db/queries');
+const db = require('./queries/auth');
 
 app.use(jsonParser);
 app.use(urlEncodedParser);

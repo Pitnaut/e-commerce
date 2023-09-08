@@ -1,6 +1,6 @@
 const express = require('express');
 const productRouter = require('./product');
-const registerRouter = require('./register')
+const registerRouter = require('./auth')
 const router = express.Router();
 
 

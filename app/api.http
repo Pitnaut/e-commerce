@@ -12,8 +12,8 @@ POST http://localhost:3000/register
 Content-Type: application/json
 
 {
-  "email": "chilliwilli@chilli.es",
-  "password": "aquidechill",
-  "firstname": "Chilli",
-  "lastname": "Willi"
+  "email": "laura_la_guapa@laguapa.com",
+  "password": "piter",
+  "firstname": "Laura",
+  "lastname": "Guasch"
 }
