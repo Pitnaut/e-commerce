@@ -5,3 +5,5 @@ const registerUser = require('../models/auth');
 router.post('/', registerUser)
 
 module.exports = router;
+
+

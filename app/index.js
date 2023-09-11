@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const routes = require('./routes/routes');
 const PORT = process.env.PORT || 3000;
+const routes = require('./routes/routes')
 const loaders = require('./loaders/index')
 
 loaders(app);

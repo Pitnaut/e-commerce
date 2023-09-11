@@ -5,17 +5,17 @@ GET http://localhost:3000
 GET http://localhost:3000/products
 
 ### Get prodcut by Id
-GET http://localhost:3000/products/4
+GET http://localhost:3000/products/3
 
 ### Register new user
 POST http://localhost:3000/register
 Content-Type: application/json
 
 {
-  "email": "laura_la_guapa@laguapa.com",
-  "password": "piter",
-  "firstname": "Laura",
-  "lastname": "Guasch"
+  "email": "otro_ejemplo_mas_pesao@exampleerl.it",
+  "password": "password_55",
+  "firstname": "Tipode",
+  "lastname": "Incognito"
 }
 
 ### Login new user

@@ -1,8 +1,12 @@
 const expressLoader = require('./express');
-const passportLoader = require('./passport');
+const passport = require('./passport');
+
 
 module.exports = async (app) => {
   const expressApp = await expressLoader(app);
 
-  const passportLoader = await passportLoader(expressApp)
+  expressApp.use(passport.initialize());
+  expressApp.use(passport.session());
+
 }
+
